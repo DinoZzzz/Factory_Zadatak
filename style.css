@@ -5,8 +5,9 @@ body {
     font-weight: normal;
     font-size: 18px;
     margin: 0;
+    margin-top: 3%;
     background: linear-gradient(to right, black 1px, transparent 1px);
-    background-size: 100px;
+    background-size: 40px;
 }
 
 /* header */
@@ -16,14 +17,14 @@ header {
     text-align: center;
 }
 .header-left-container {
-    background-color: #dddddd;
+    background-color: #ddddddef;
     border-radius: 0px 0px 5px 5px;
     float: left;
     width: 31%;
     height: 100px;
 }
 .header-right-container {
-    background-color: #dddddd;
+    background-color: #ddddddef;
     border-radius: 0px 0px 5px 5px;
     float: right;
     width: 66%;
@@ -37,7 +38,7 @@ header {
 /* footer */
 footer {
     display: flex;
-    background-color: #dddddd;
+    background-color: #ddddddef;
     border-radius: 5px 5px 0px 0px;
     width: 60%;
     height: 100px;
@@ -86,22 +87,23 @@ footer {
     overflow: hidden ;
     
 }
-.image {
-    height: 200px !important;
+.image{
+    height: 160px;
+    width: auto;
+    opacity: 0.9;
     margin: 0 4px ;
     border-radius: 5px ;
-    
+    overflow-x: hidden ;
 }
 .button-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10px 0 10px 120px;
 }
 
 .text {
     width: 29%;
-    margin-top: 5%;
+    margin-top: 11%;
     padding-bottom: 15%;
 }
 
