@@ -5,7 +5,7 @@ body {
     font-weight: normal;
     font-size: 18px;
     margin: 0;
-    margin-top: 3%;
+    margin-top: 5%;
     background: linear-gradient(to right, black 1px, transparent 1px);
     background-size: 40px;
 }
@@ -51,68 +51,74 @@ footer {
     margin-left: 5%;
 }
 
+/* Container */
 .container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin: 0 auto;
     width: 60%;
-    min-height: 500px;
 }
-
 .slider {
     align-self: center;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 60%;
-    
+}
+.bottom-part {
+    display: flex;
+    flex-direction: row;
 }
 
+/* Image */
 .img-top {
     display: flex ;
     flex-direction: row ;
     padding: 5px ;
     overflow: hidden ;
-}
-
-.bottom-part {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 .img-bot {
     display: flex ;
     flex-direction: row ;
     padding: 5px ;
-    overflow: hidden ;
-    
+    overflow-x: hidden ;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 .image{
     height: 200px;
     width: auto;
     opacity: 0.9;
-    margin: 0 4px ;
-    border-radius: 5px ;
-    overflow: hidden ;
-}
-.button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin: 0 4px;
+    border-radius: 5px;
 }
 
+
+/* Text */
 .text {
     width: 29%;
     margin-top: 5%;
     padding-bottom: 15%;
 }
-
 h1 {
     color: #134880;
 }
 
 
 /* Buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
 .prev-btn, .next-btn{
     display: inline-block;
     background-color: #fff;

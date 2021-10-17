@@ -1,35 +1,24 @@
 $(document).ready(function () {
-    const topImages = $('.img-top')
-    const bottomImages = $('.img-bot')
-    const leftBtn = $('.prev-btn')
-    const rightBtn = $('.next-btn')
+    var topImages = $('.img-top')
+    var bottomImages = $('.img-bot')
+    var rightBtn = $('.prev-btn')
+    var leftBtn = $('.next-btn')
 
     $(rightBtn).click(() => {
-        $(rightBtn).prop('disabled', true)
         let lastImageTop = $(".img-top .image").last()
         $(lastImageTop).clone().prependTo(topImages)
-        $(lastImageTop).remove()
+        $(lastImageTop).hide('slow').remove()
         let lastImageBottom = $(".img-bot .image").last()
         $(lastImageBottom).clone().prependTo(bottomImages)
-        $(lastImageBottom).remove()
-        if ($(rightBtn).is(':animated')) {
-            $(rightBtn).prop('disabled', true)
-        };
-        setTimeout(() => {
-            $(rightBtn).prop('disabled', false)
-        }, 500)
+        $(lastImageBottom).hide('slow').remove()
     })
 
     $(leftBtn).click(() => {
-        $(leftBtn).prop('disabled', true)
         let firstImageTop = $(".img-top .image").first()
         $(firstImageTop).clone().appendTo(topImages)
-        $(firstImageTop).remove()
+        $(firstImageTop).hide('slow').remove()
         let firstImageBottom = $(".img-bot .image").first()
         $(firstImageBottom).clone().appendTo(bottomImages)
-        $(firstImageBottom).remove()
-        setTimeout(() => {
-            $(leftBtn).prop('disabled', false)
-        }, 500)
+        $(firstImageBottom).hide('slow').remove()
     })
 });
