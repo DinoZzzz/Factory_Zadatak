@@ -88,12 +88,12 @@ footer {
     
 }
 .image{
-    height: 160px;
+    height: 200px;
     width: auto;
     opacity: 0.9;
     margin: 0 4px ;
     border-radius: 5px ;
-    overflow-x: hidden ;
+    overflow: hidden ;
 }
 .button-container {
     display: flex;
@@ -103,7 +103,7 @@ footer {
 
 .text {
     width: 29%;
-    margin-top: 11%;
+    margin-top: 5%;
     padding-bottom: 15%;
 }
 
